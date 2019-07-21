@@ -46,7 +46,7 @@ module.exports = {
             checkSyntacticErrors: true
         }),
         new HtmlWebpackPlugin({
-            title: "Webpack TS boilerplate"
+            title: "Supply Demand Idle"
         })
     ]
 };
