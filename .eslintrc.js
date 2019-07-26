@@ -20,10 +20,6 @@ module.exports = {
         "project": "./tsconfig.json"
     },
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
         "linebreak-style": [
             "error",
             "unix"
@@ -56,8 +52,58 @@ module.exports = {
             "error",
             "always"
         ],
+        "no-underscore-dangle": [
+            "error",
+            {
+                "allowAfterThis": true
+            }
+        ],
+        "lines-between-class-members": [
+            "error",
+            "always",
+            {
+                "exceptAfterSingleLine": true
+            }
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 120,
+                "comments": 120
+            }
+        ],
+        "capitalized-comments": [
+            "error",
+            "always",
+            {
+                "ignoreConsecutiveComments": true
+            }
+        ],
+        "multiline-comment-style": [
+            "error",
+            "separate-lines"
+        ],
+        "dot-location": [
+            "error",
+            "property"
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true,
+                "allowTypedFunctionExpressions": true,
+                "allowHigherOrderFunctions": true
+            }
+        ],
+        "id-length": "off",
         "sort-keys": "off",
+        "sort-imports": "off",
+        "no-plusplus": "off",
+        "no-mixed-operators": "off",
+        "class-methods-use-this": "off",
         "require-unicode-regexp": "off",
-        "array-element-newline": "off"
+        "array-element-newline": "off",
+        "prefer-destructuring": "off",
+        "@typescript-eslint/no-magic-numbers": "off"
     }
 };
