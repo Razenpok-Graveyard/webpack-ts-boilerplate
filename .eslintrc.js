@@ -87,6 +87,10 @@ module.exports = {
             "error",
             "property"
         ],
+        "multiline-ternary": [
+          "error",
+          "always-multiline"
+        ],
         "@typescript-eslint/explicit-function-return-type": [
             "error",
             {
@@ -95,8 +99,19 @@ module.exports = {
                 "allowHigherOrderFunctions": true
             }
         ],
+        "@typescript-eslint/no-type-alias": [
+          "error",
+          {
+            "allowAliases": "in-unions-and-intersections"
+          }
+        ],
+        "@typescript-eslint/member-ordering": "off",
+        "func-style": "off",
+        "no-ternary": "off",
         "id-length": "off",
         "sort-keys": "off",
+        "no-continue": "off",
+        "no-undefined": "off",
         "sort-imports": "off",
         "no-plusplus": "off",
         "no-mixed-operators": "off",
@@ -104,6 +119,7 @@ module.exports = {
         "require-unicode-regexp": "off",
         "array-element-newline": "off",
         "prefer-destructuring": "off",
+        "prefer-named-capture-group": "off",
         "@typescript-eslint/no-magic-numbers": "off"
     }
 };
